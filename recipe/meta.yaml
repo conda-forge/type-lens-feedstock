@@ -1,5 +1,5 @@
 {% set name = "type-lens" %}
-{% set version = "0.2.3" %}
+{% set version = "0.2.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/type_lens-{{ version }}.tar.gz
-  sha256: 8720176565c8129bf196fdbdb8c15fdabe150d779bbed101e6b2f418c54ed9bc
+  sha256: 1301f1c97c6cdb71b5465287375e78f66f6e1116c0d9d31bac50bf61cea7dfd6
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
@@ -36,7 +36,7 @@ test:
 about:
   home: https://github.com/litestar-org/type-lens
   doc_url: http://docs.type-lens.litestar.dev/
-  summary: Runtime type introspection utilities 
+  summary: Runtime type introspection utilities
   license: MIT
   license_file: LICENSE
 
