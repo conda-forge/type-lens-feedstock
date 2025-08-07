@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: type-lens
-  version: 0.2.4
+  version: "0.2.5"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/type_lens-${{ version }}.tar.gz
-  sha256: 1301f1c97c6cdb71b5465287375e78f66f6e1116c0d9d31bac50bf61cea7dfd6
+  sha256: 6cd32d38845c574d244c979c89c955da6e13c4aad0dc5cd08d318ba31b9cabf1
 
 build:
   number: 0
